@@ -1,0 +1,29 @@
+:root {
+  --font-display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --font-body: 'DM Sans', 'Trebuchet MS', sans-serif;
+  --bg: #0a0b0d;
+  --surface: #121519;
+  --surface-raised: #1b2025;
+  --text: #f4f1e8;
+  --text-muted: #a7aaa6;
+  --border: #2a3034;
+  --accent: #f4c542;
+  --accent-hover: #ffd866;
+  --success: #89a58a;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f3f1ea;
+  --surface: #ffffff;
+  --surface-raised: #e7e5de;
+  --text: #17191b;
+  --text-muted: #5d625f;
+  --border: #d2d0c8;
+  --accent: #b88900;
+  --accent-hover: #8e6b00;
+  --success: #4e7455;
+  --shadow: 0 24px 80px rgba(36, 35, 29, 0.1);
+  color-scheme: light;
+}

@@ -1,0 +1,8 @@
+import { FiArrowUpRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import PageShell from '../components/layout/PageShell.jsx';
+import SectionHeading from '../components/common/SectionHeading.jsx';
+import { useDocumentMeta } from '../hooks/useDocumentMeta.js';
+import '../styles/pages.css';
+
+export default function AboutPage() { useDocumentMeta({ title: 'Sobre a Onyx Stack', description: 'Conheça a proposta da Onyx Stack para web, automação e software.' }); return <PageShell><main><section className="page-hero"><div className="container narrow"><span className="eyebrow">Sobre a Onyx Stack</span><h1 className="section-title">Tecnologia com um lado humano.</h1><p className="lead">Somos uma equipe planejada especialmente para as necessidades do seu negócio: próxima o bastante para entender, técnica o bastante para construir.</p></div></section><section className="section"><div className="container about-grid"><SectionHeading eyebrow="Nossa proposta" title="Você cuida do que faz de melhor." /><div><p className="lead">A gente cuida do que você precisa para que seu sonho se realize. Isso pode ser um produto pronto, uma automação que devolve seu tempo ou um software inteiro construído para sua operação.</p><p className="lead">Sem promessas vazias e sem transformar cada conversa em uma aula de tecnologia. Só decisões úteis, feitas em conjunto.</p></div></div></section><section className="quote-section"><div className="container"><blockquote>“Gaste menos tempo gerenciando contatos e mais tempo se dedicando ao seu serviço.”</blockquote><Link className="text-link" to="/contato">Conhecer a Onyx Stack na prática <FiArrowUpRight aria-hidden="true" /></Link></div></section></main></PageShell>; }

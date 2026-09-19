@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://my-app.stackonyx.workers.dev/",
-      "statusCode": 301
-    }
-  ]
-}

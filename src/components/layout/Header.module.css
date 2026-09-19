@@ -1,0 +1,21 @@
+.header { border-bottom: 1px solid var(--border); position: relative; z-index: 10; }
+.inner { align-items: center; display: flex; justify-content: space-between; min-height: 78px; }
+.brand { align-items: center; display: inline-flex; font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; gap: 9px; letter-spacing: -0.04em; }
+.brand img { height: 38px; object-fit: contain; width: 31px; }
+.brand b { color: var(--accent); font-weight: 500; }
+.nav { align-items: center; display: flex; gap: 27px; }
+.nav a { color: var(--text-muted); font-size: 0.82rem; font-weight: 600; transition: color 180ms ease; }
+.nav a:hover, .nav a.active { color: var(--text); }
+.nav .contactLink { align-items: center; background: var(--accent); color: #17191b; display: inline-flex; gap: 7px; min-height: 38px; padding: 0 14px; }
+.nav .contactLink:hover { color: #17191b; background: var(--accent-hover); }
+.menuButton { background: transparent; color: var(--text); display: none; font-size: 1.4rem; padding: 8px; }
+:global(.theme-toggle) { align-items: center; background: var(--surface-raised); border: 1px solid var(--border); color: var(--text); display: inline-flex; height: 38px; justify-content: center; width: 38px; }
+:global(.theme-toggle:hover) { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 700px) {
+  .menuButton { display: inline-flex; }
+  .nav { align-items: stretch; background: var(--surface); border-bottom: 1px solid var(--border); display: none; flex-direction: column; gap: 0; left: -16px; padding: 10px 16px 18px; position: absolute; right: -16px; top: 78px; }
+  .nav.open { display: flex; }
+  .nav a { padding: 15px 0; }
+  .nav .contactLink { justify-content: center; margin-top: 7px; }
+  :global(.theme-toggle) { align-self: flex-start; margin-top: 12px; }
+}
