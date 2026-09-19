@@ -11,6 +11,9 @@
   --accent-hover: #ffd866;
   --success: #89a58a;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --space-section: clamp(5rem, 10vw, 8rem);
   color-scheme: dark;
 }
 
